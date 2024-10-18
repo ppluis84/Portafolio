@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!--Menu encabezado-->
-    <h1>Portafolio</h1>
+    <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">JOSE LUIS</a>
+                <a href="#">José Luis</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive"></div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
+
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
+            <br><br><br><br>
             <div class="contenedor-img">
-                <img src="img/Foto.png" style="width: 190px;" alt="">
+                <img src="img/hero.png" alt="">
             </div>
             <h1>JOSE LUIS ROMERO CAPA</h1>
             <h2>Economista - Especialista en Business Intelligence</h2>
@@ -42,11 +47,12 @@
             </div>
         </div>
     </section>
+
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, mi nombre es José Luis Romero Capa.</span> Soy economista de profesión y me especializo en el análisis de datos, 
+            <p><span>Hola, soy José Luis Romero.</span> economista de profesión, me especializo en el análisis de datos, 
                 actualmente laboro para una empresa de producción y comercialización de berries de exportación. Me apasiona transformar
                 datos en información valiosa, optimizando procesos y detectando patrones clave. A través de la automatización y el uso
                 eficiente de herramientas de análisis, facilito la gestión diaria de asistencia y horas trabajadas, mejorando la precisión y
@@ -60,7 +66,7 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños</strong>
-                            31 de diciembre de 1984
+                            15-01-1980
                         </li>
                         <li>
                             <strong>Teléfono</strong>
@@ -72,11 +78,11 @@
                         </li>
                         <li>
                             <strong>Website</strong>
-                            www.datasur.com
+                            https://ppluis84.github.io/Portafolio/
                         </li>
                         <li>
                             <strong>Dirección</strong>
-                            Yaguarcuna, calle Romerillos, Loja - Ecuador
+                            237-145 Loja, Ecuador
                         </li>
                         <li>
                             <strong>Cargo</strong>
@@ -90,8 +96,8 @@
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>DATOS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
@@ -102,26 +108,25 @@
                             <span>VIAJAR</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-guitar"></i>
-                            <span>GUITARRA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
                             <i class="fa-solid fa-book"></i>
                             <span>LIBROS</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-chart-line"></i>
-                            <span>DATOS</span>
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>GUITARRA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-film"></i>
                             <span>CINE</span>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -159,7 +164,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>EXCEL</span>
+                        <span>Excel</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
@@ -333,37 +338,24 @@
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
-            <h3>Análisis de las importaciones aéreas desde Miami hacia Ecuador en el periodo 2021-2023 para la optimización de estrategias comerciales en el sector de logística y transporte</h3>
             <div class="galeria">
                 <div class="proyecto">
                     <img src="img/p1.png" alt="">
                     <div class="overlay">
-                        <h3>Clustering</h3>
-                        <p>Método de agrupación jerárquica</p>
+                        <h3>ETL y Análisis de Datos</h3>
+                        <p>Python y Power BI</p>       
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.png" alt="">
-                    <div class="overlay">
-                        <h3>Caracterisación de clusters</h3>
-                        <p>Mapa de calor</p>
+                    <div class="descripción">
+                        <h3>ETL y Análisis de Datos</h3>
+                        <p>Resumen: En este proyecto se tiene como objetivo principal la creación de un sistema de visualización de datos para una empresa de exportación de Berries, utilizando SQL Server como base de datos y herramientas de visualización como Power BI. Se pudo seguir varios pasos para lograr este objetivo, incluyendo la limpieza de los datos, creación de la base de datos, carga de los datasets correspondientes, la ejecución de consultas para obtener información clave y la generación de visualizaciones relevantes para el personal del hospital.</p>
+                        <br>
+                        <a href="https://ppluis84.github.io/proyecto1/" target="_blank" class="enlace-proyecto-1">Leer más..</a>
                     </div>
+                    <br>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p3.png" alt="">
-                    <div class="overlay">
-                        <h3>Proyecciones</h3>
-                        <p>Método ARIMA</p>
-                    </div>
-                </div>
+                <hr>
+                <br>
             </div>
-            <p>En este proyecto se analizó los datos de las importaciones en Python a través de la implementación de dos modelos, uno de clustering, el cual 
-                permite estimar grupos de importadores para evaluar su estrategia por segmento y el otro de forecast, con el cual se pronostica 
-                las importaciones a tres meses. Los resultados del método de clustering indica que se puede dividir los datos en tres grupos de 
-                acuerdo con la cantidad de productos importados, importadores de demanda alta, media y baja, de estos tres grupos la estrategia 
-                del importador de demanda alta es la que minimiza costos y tiempos de legalización, en el caso del método de forecast, se determinó 
-                un crecimiento en las importaciones en el próximo mes.
-            </p>
         </div>
     </section>
 
@@ -391,11 +383,11 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Yaguarcuna, calle Romerillos 237 - 145 Loja - Ecuador
+                                Ecuador 237-145, Loja
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                +593 99 33 81149
+                                +593 99 33 81149 
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
@@ -418,7 +410,7 @@
             <a href="https://x.com/JoseL_RomeroC" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/jos%C3%A9-luis-romero-capa-691740167/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-    </footer>
+</footer>
 
     <script src="script.js"></script>
 </body>

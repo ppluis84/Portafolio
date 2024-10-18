@@ -58,7 +58,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.PNG);
+    url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -82,8 +82,8 @@ html{
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 42px;
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
@@ -175,8 +175,7 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-}
-.sobremi .fila .col .contenedor-intereses .interes:hover{
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
@@ -481,21 +480,20 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 .portfolio .galeria .proyecto{
     position: relative;
     max-width: 340px;
-    height: fit-content;
-    margin: 10px;
+    height: fit-content(20em);
+    margin: 0;
     cursor: pointer;
+    display: flex; /* Usamos flexbox para alinear la imagen y el texto en una fila */
+    align-items: center; /* Alineamos verticalmente el contenido */
+    margin-bottom: 20px;
 }
 .portfolio .galeria .proyecto img{
-    width: 100%;
+    width: 200%;
     display: block;
+    margin-right: 20px;
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -522,6 +520,47 @@ html{
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+.portfolio .galeria .proyecto .descripción{
+    max-width: 400px;
+}
+.portfolio .galeria .proyecto .descripción h3 {
+    width: 300%;
+    margin: 10;
+    font-size: 1.5em; 
+}
+.portfolio .galeria .proyecto .descripción p {
+    width: 300%;
+    margin: 5px 1 1;
+    color: #666; /* Color del texto de la descripción */
+}
+/* Estilo normal del enlace */
+.enlace-proyecto-1 {
+  color: blue; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  font-size: 18px; /* Tamaño de la fuente */
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  padding: 7px; /* Espacio interno */
+  background-color: lightgray; /* Color de fondo */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo cuando el ratón pasa sobre el enlace */
+.enlace-proyecto-1:hover {
+  color: white; /* Cambia el color del texto */
+  background-color: blue; /* Cambia el color de fondo */
+  text-decoration: underline; /* Subraya el texto al pasar el ratón */
+}
+
+/* Estilo cuando se ha visitado el enlace */
+.enlace-proyecto-1:visited {
+  color: purple; /* Cambia el color si el enlace ya ha sido visitado */
+}
+
+/* Estilo cuando el enlace está activo (en el momento del clic) */
+.enlace-proyecto-1:active {
+  color: red; /* Cambia el color cuando se hace clic */
+}
+
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(img/contact_bg.png);
@@ -591,7 +630,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-width: 350px;
+    max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
