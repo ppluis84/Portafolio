@@ -491,9 +491,10 @@ html{
     margin-bottom: 20px;
 }
 .portfolio .galeria .proyecto img{
-    width: 200%;
+    width: 180%;
     display: block;
-    margin-right: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -525,13 +526,14 @@ html{
 }
 .portfolio .galeria .proyecto .descripción h3 {
     width: 300%;
-    margin: 10;
+    margin: 12px;
     font-size: 1.5em; 
 }
 .portfolio .galeria .proyecto .descripción p {
     width: 300%;
-    margin: 5px 1 1;
+    margin: 5px 5px 5px 5px;
     color: #666; /* Color del texto de la descripción */
+    text-align: justify;
 }
 /* Estilo normal del enlace */
 .enlace-proyecto-1 {
@@ -542,6 +544,7 @@ html{
   padding: 7px; /* Espacio interno */
   background-color: lightgray; /* Color de fondo */
   border-radius: 5px; /* Bordes redondeados */
+  margin: 12px;
 }
 
 /* Estilo cuando el ratón pasa sobre el enlace */
